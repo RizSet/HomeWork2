@@ -17,11 +17,16 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  tests:
+    name: Run Unit Tests and Analyse
     runs-on: ubuntu-latest
-
     steps:
       - uses: bcgov-nr/action-test-and-analyse-java@v.0.1.0
         with:
           commands: |
             ./gradlew test
+#           dir: back
+#           java-cache: maven
+#           java-distribution: temurin
+#           java-version: "17"
+
