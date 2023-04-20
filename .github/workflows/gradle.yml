@@ -28,5 +28,5 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - run:  build
-    - run:  test
+    - run:  ./gradlew testbuild
+    - run:  ./gradlew test
