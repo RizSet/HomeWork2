@@ -28,4 +28,4 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: test
-        uses: ./gradlew test - action@ccb4328a959376b642e027874838f60f8e596de3
+        uses: ./gradlew test
