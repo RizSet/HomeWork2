@@ -28,6 +28,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - run:  ./gradlew testbuild
+    - name: Make gradlew executable
+      run: chmod +x ./gradlew
     - run:  ./gradlew test
     
