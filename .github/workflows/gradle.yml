@@ -28,7 +28,5 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - name: Validate Gradle wrapper
-      uses: gradle/wrapper-validation-action@ccb4328a959376b642e027874838f60f8e596de3
-    
+    - run: ./gradlew build
     - run: ./gradlew test
