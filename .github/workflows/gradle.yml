@@ -30,3 +30,4 @@ jobs:
         distribution: 'temurin'
     - run:  ./gradlew testbuild
     - run:  ./gradlew test
+    
