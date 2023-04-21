@@ -16,6 +16,7 @@ public class SumCalculatorTest {
         Assertions.assertEquals(expected, actual);
     }
 
+
     @Test
     public void correctSumNumberFrom1To3() {
         int actual = calculator.sum(3);
